@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import Card from './Card';
 import Paginado from './Paginado';
 import SearchBar from './SearchBar';
+// import nuevaVista from './nuevaVista';
 import style from '../modulesCss/home.module.css';
 
 export default function Home (){
@@ -92,6 +93,7 @@ export default function Home (){
                 paginado = {paginado}
             />
             <SearchBar/>
+            {/* <nuevaVista/> */}
             {
                 currentRecipes?.map((e) => {
                     // console.log(e.id)

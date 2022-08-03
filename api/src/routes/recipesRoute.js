@@ -36,13 +36,6 @@ router.get('/:id', async (req, res) => {
     }
 })
 
-// router.delete('/', async(req, res) => {
-//     const {name} = req.query;
-//     try {
-//         let infoFoods = await allFoods();
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
+
 
 module.exports = router;

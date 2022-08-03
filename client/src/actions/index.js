@@ -79,3 +79,13 @@ export function getDetail (id){
         }
     }
 }
+
+// export function getRecipesDB(){
+//     return async function(dispatch){
+//         var json = await axios.get('http://localhost:3001/recipes')
+//         return dispatch({
+//             type: 'GET_RECIPESDB',
+//             payload: json.data
+//         })
+//     }
+// }

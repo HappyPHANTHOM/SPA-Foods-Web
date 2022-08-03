@@ -2,7 +2,8 @@ const initialState = {
     recipes: [],
     allRecipes: [],
     diets: [],
-    detail: []
+    detail: [],
+    // createDB: []
 }
 
 function rootReducer (state = initialState, action){
@@ -82,7 +83,15 @@ function rootReducer (state = initialState, action){
                 ...state,
                 detail: action.payload
             }
-            default: return state;
+        // case 'GET_RECIPESDB':
+        //     const all = state.recipes
+        //     const datos = all.filter((e) => { e.createDb == true})
+        //     return {
+        //         ...state,
+        //         createDB: datos
+        //     }
+
+        default: return state;
     }
 }
 
