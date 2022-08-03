@@ -16,6 +16,7 @@ export default function Detail(){
      }, [dispatch])
 
      const myRecipe = useSelector((state) => state.detail)
+     const myRecipa = useSelector((state) => state.detail)
 
      return(
          <div className={style.contains}>
