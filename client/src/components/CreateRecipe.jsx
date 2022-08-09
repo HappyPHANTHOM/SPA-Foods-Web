@@ -86,11 +86,11 @@ export default function RecipeCreate(){
 
     return(
         <div className={style.contains} >
-            <Link to='/home'><button className={style.buttonHome}>Volver</button></Link>
-            <h1>Crea tu receta</h1>
+            <Link to='/home'><button className={style.buttonHome}>Return</button></Link>
+            <h1>Create Recipe</h1>
             <form className={style.form} onSubmit={(e) => {handleSubmit(e)}}>
                 <div>
-                    <label>Titulo de receta:</label>
+                    <label>Recipe title:</label>
                     <input className={style.input}
                     type='text'
                     value= {input.title}
@@ -146,7 +146,7 @@ export default function RecipeCreate(){
                     }
                 </select>
                 <div>
-                    <label>Instrucciones:</label>
+                    <label>Instructions:</label>
                     <input className={style.steps}
                     type='textarea'
                     value= {input.steps}
@@ -156,7 +156,7 @@ export default function RecipeCreate(){
                 </div>
                 <br/>
               
-                <button  className={style.buttonCreate} type='submit'>Crear Receta</button>
+                <button  className={style.buttonCreate} type='submit'>Create Recipe</button>
             </form>
             <ul>
                     <li>

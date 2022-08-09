@@ -53,13 +53,13 @@ export default function Home (){
     // console.log(allRecipes)
     return (
         <div className={style.container}>
-            <Link  className={style.button2} to='/recipe'>Crear Receta</Link>
-           <div> <h1 className={style.page} >Recetario</h1> </div>
+            <Link  className={style.button2} to='/recipe'>Crate Recipe</Link>
+           <div> <h1 className={style.page} >Recipe Book</h1> </div>
             <button  className={style.button2} onClick={e => {handleClick(e)}}>
-                Volver a cargar recetas
+                Refresh recipes
             </button>
             <div className={style.bordercont} >
-                <h2>Tipo de Dieta</h2>
+                <h2>Type of recipe</h2>
                 <select className={style.select} onChange={e => handleFilterDiet(e)}>
                     <option value='All'>All</option>
                     <option value='gluten free'>Gluten free</option>
@@ -75,7 +75,7 @@ export default function Home (){
                 </select>
             </div>
             <div>
-                <h2>Ordenamiento por puntaje</h2>
+                <h2>Score sort</h2>
                 <select className={style.select} onChange={e => handleFilterScore(e)}>
                     <option value='top-asc'>Asc</option>
                     <option value='top-desc'>Desc</option>

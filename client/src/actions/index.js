@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export function getRecipes(){
     return async function(dispatch){
-        var json = await axios.get('http://localhost:3001/recipes')
+        var json = await axios.get('https://pifoods1.herokuapp.com/recipes')
         return dispatch({
             type: 'GET_RECIPES',
             payload: json.data
@@ -35,7 +35,7 @@ export function orderByTitle(payload){
 export function getRecipesByTitle(payload){
     return async function (dispatch){
         try {
-            var json = await axios.get(`http://localhost:3001/recipes?name=${payload}`);
+            var json = await axios.get(`https://pifoods1.herokuapp.com/recipes?name=${payload}`);
             return dispatch({
                 type : 'GET_RECIPES_BY_TITLE',
                 payload: json.data
@@ -48,7 +48,7 @@ export function getRecipesByTitle(payload){
 
 export function getDietsDB(){
     return async function(dispatch){
-        var info = await axios('http://localhost:3001/types',{
+        var info = await axios('https://pifoods1.herokuapp.com/types',{
 
         })
         return dispatch({
@@ -60,7 +60,7 @@ export function getDietsDB(){
 
 export function postData(payload){
     return async function(dispatch){
-        const response = await axios.post('http://localhost:3001/recipe',payload)
+        const response = await axios.post('https://pifoods1.herokuapp.com/recipe',payload)
         console.log(response, '<-----post')
         return response;
     }
@@ -69,7 +69,7 @@ export function postData(payload){
 export function getDetail (id){
     return async function(dispatch){
         try {
-            var json = await axios.get('http://localhost:3001/recipes/' + id);
+            var json = await axios.get('https://pifoods1.herokuapp.com/recipes/' + id);
             return dispatch ({
                 type: 'GET_DETAILS',
                 payload: json.data

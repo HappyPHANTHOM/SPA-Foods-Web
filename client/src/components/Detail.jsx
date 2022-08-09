@@ -34,7 +34,7 @@ export default function Detail(){
                         <img className={style.img} src={myRecipe[0].img? myRecipe[0].img : myRecipe[0].image}/>
                     </div>
                     <div>
-                        <h5 className={style.titles}>Tipo de dieta:</h5> 
+                        <h5 className={style.titles}>Type of recipe:</h5> 
                         <h2>{myRecipe[0].diet ? myRecipe[0].diet.map(el => el.name.toUpperCase() + ', ') : myRecipe[0].diets.map(el => el.name.toUpperCase() + ', ')}</h2>
                     </div>
                     <div>

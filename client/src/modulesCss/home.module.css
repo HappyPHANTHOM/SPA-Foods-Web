@@ -2,7 +2,7 @@
 
 
 .container {
-    display: flex;
+    /* display: flex;
     min-height: 100vh;
     min-width: 100vh;   
     background:linear-gradient(rgba(5, 7, 12, 0.198), rgba(5, 7, 12, 0.65));
@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     flex-direction: column;
     justify-content: center;
-    align-self: center;
+    align-self: center; */
     
 }
     
@@ -113,12 +113,12 @@
   }
 
   .cards {
-    display: flex;
+    /* display: flex; */
     justify-content: space-around;
     flex-wrap: wrap;
     font-family: 'Abel', sans-serif;
     font-size: 21px;
-    text-transform: capitalize;  
+    text-transform: capitalize; 
   }
 
   .link {    
